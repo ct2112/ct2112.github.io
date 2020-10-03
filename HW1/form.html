@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Interest Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav_bar">
+                <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+            </li>
+            <li class = "nav_bar">
+                <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto">
+
+            <li class = "nav_bar">
+                <a class="nav-link mr-auto" href="https://github.com/ct2112/CSCI3308_labs">
+                    <img src="Github_img.png" style="height:30px" alt="Github Logo">
+                </a>
+            </li>
+        </ul>
+      
+    </nav>
+    <body style="background-color:rgb(255, 255, 255);">
+        <div class="container">
+ 
+            <form class="form-signin" action="mypage_bootstrap.html">
+                
+                <h1 class="h3 mb-3 font-weight-normal">Add an interest</h1>
+                <label for="int_name" class="sr-only">Interest name</label>
+                <input type="text" id="int_name" class="form-control" placeholder="Interest name" required autofocus>
+                <label for="about" class="sr-only">Interest description</label>
+                <input type="text" id="about" class="form-control" placeholder="description" required>
+                <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Interest Level
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item">1</a>
+                        <a class="dropdown-item">2</a>
+                        <a class="dropdown-item">3</a>
+                        <a class="dropdown-item">4</a>
+                        <a class="dropdown-item">5</a>
+                    </div>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Number of tweets to display
+                    </button>
+                    <div class="dropdown-menu float-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item">0</a>
+                        <a class="dropdown-item">1</a>
+                        <a class="dropdown-item">2</a>
+                        <a class="dropdown-item">3</a>
+                        <a class="dropdown-item">4</a>
+                        <a class="dropdown-item">5</a>
+                    </div>
+                </div>
+                <form class="form-signin">
+                    <h1 class="h3 mb-3 font-weight-normal">Login to submit</h1>
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                </form>
+                <br>
+                <a class="btn btn-lg btn-primary" href="mypage_bootstrap.html" role="button">enter</a>
+                <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+            </form>
+        </div>
+    </body>
+    </html>
